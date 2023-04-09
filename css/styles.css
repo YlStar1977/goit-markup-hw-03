@@ -131,16 +131,19 @@ body {
   background: var(--color-navy-blue);
 }
 .hero-title {
+  padding-top: 188px;
+  padding-right: 472px;
+  padding-bottom: 292px;
+  padding-left: 472px;
+  margin-bottom: 120px;
+  margin: auto;
+
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--color-white);
-
-  width: 496px;
-  height: 120px;
-  margin: auto;
 }
 
 .hero-button {
@@ -154,7 +157,6 @@ body {
   color: var(--color-white);
   background: var(--color-iris);
 
-  flex: none;
   margin: auto;
   padding: 16px, 32px;
 }
