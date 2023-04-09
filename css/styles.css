@@ -44,14 +44,20 @@ body {
 }
 .container {
   max-width: 1158px;
-  padding: 15px;
+  padding: 0px 15px;
   margin: auto;
 
-  /* outline: solid red;
-  outline-offset: -2px; */
+  outline: solid red;
+  outline-offset: -2px;
 }
+
 /* Top line header*/
 /* logo  */
+
+.header-container {
+  display: flex;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -63,7 +69,6 @@ body {
   color: var(--color-iris);
   margin-right: 76px;
   padding: 0px;
-  flex-direction: row;
   flex: start;
 }
 
@@ -73,18 +78,17 @@ body {
 
 .nav-flex {
   display: flex;
+  gap: 40px;
 }
 
-.heder-nav .item:not(:last-child) {
-  margin-left: 40px;
+.heder-flex {
+  display: flex;
+  margin-right: auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .heder-nav {
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-right: 40px;
-
   font-family: var(--primary-front);
   font-weight: 500;
   font-size: 16px;
@@ -101,17 +105,12 @@ body {
 
 .adress-flex {
   display: flex;
-}
-
-.adress-flex.item:not(:last-child) {
-  margin-left: 40px;
-}
-.address {
-  display: block;
-  margin-right: 40px;
+  gap: 40px;
   padding-top: 24px;
   padding-bottom: 24px;
+}
 
+.address {
   font-family: var(--primary-front);
   font-style: normal;
   font-size: 16px;
@@ -130,23 +129,32 @@ body {
 .hero-section {
   background: var(--color-navy-blue);
 }
-.hero-title {
-  padding-top: 188px;
-  padding-right: 472px;
-  padding-bottom: 292px;
-  padding-left: 472px;
-  margin-bottom: 120px;
-  margin: auto;
 
+.title-box {
+  margin: auto;
+}
+.hero-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--color-white);
+  width: 496px;
+  height: 120px;
+  margin-bottom: 64px;
 }
-
+.hero-box {
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
 .hero-button {
+  margin: auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -156,9 +164,6 @@ body {
   align-items: center;
   color: var(--color-white);
   background: var(--color-iris);
-
-  margin: auto;
-  padding: 16px, 32px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -166,6 +171,18 @@ body {
   cursor: pointer;
 }
 /* Section-1 */
+.visualy-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+  white-space: nowrap;
+  clip-path: inherit(100%);
+  clip: rect(0 0 0);
+  overflow: hidden;
+}
 .section-title {
   font-weight: 500;
   font-size: 20px;
@@ -183,7 +200,6 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--color-slate);
-  width: 264px;
 }
 .flex-list {
   display: flex;
@@ -205,10 +221,10 @@ body {
   color: var(--color-navy-blue);
 }
 .flex-imag {
-  display: flex;
+  display: block;
   gap: 24px;
-  padding-top: 72px;
-  padding-bottom: 120;
+  margin-top: 72px;
+  padding-bottom: 120px;
 }
 
 /* Section 3 */
@@ -219,14 +235,14 @@ body {
   background-color: var(--color-white);
 }
 .card-set {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   gap: 24px;
   padding-top: 72px;
   padding-bottom: 120px;
 }
 .card-style {
-  min-height: 380px;
+  max-height: 380px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -254,7 +270,7 @@ body {
   text-align: center;
 
   color: var(--color-navy-blue);
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .text-style-section {
   font-size: 16px;
@@ -331,6 +347,7 @@ body {
   padding-top: 96px;
   padding-bottom: 72px;
 }
+
 /* Row 1 2 3 */
 .title-row {
   font-weight: 500;
@@ -340,6 +357,8 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--color-navy-blue);
+
+  margin-bottom: 8px;
 }
 .text-row {
   font-size: 16px;
@@ -352,9 +371,19 @@ body {
 .flex-gallery {
   display: flex;
   flex-wrap: wrap;
+  flex-basis: calc(100% / 3 - 24px);
   row-gap: 48px;
-  column-gap: 24px;
+  /* column-gap: 24px; */
+  padding-right: -15px;
 }
 .border-gallery {
   border: 1px solid #e7e9fc;
+}
+.content-card {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 16px;
+}
+.row-card {
+  padding-bottom: 120px;
 }
