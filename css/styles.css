@@ -22,6 +22,7 @@ h3,
 p,
 ul {
   margin: 0;
+  padding: 0px;
 }
 img {
   display: block;
@@ -70,13 +71,24 @@ body {
   color: var(--color-navy-blue);
 }
 
-.heder-nav {
-  font-family: var(--primary-front);
+.nav-flex {
+  display: flex;
+}
 
+.heder-nav .item:not(:last-child) {
+  margin-left: 40px;
+}
+
+.heder-nav {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 40px;
+
+  font-family: var(--primary-front);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-
   letter-spacing: 0.02em;
 
   color: var(--color-navy-blue);
@@ -86,15 +98,20 @@ body {
 .heder-nav:focus {
   color: var(--color-ocean);
 }
-.heder-nav-list {
+
+.adress-flex {
   display: flex;
-  flex-direction: row;
 }
-.heder-container {
-  display: flex;
-  align-items: center;
+
+.adress-flex.item:not(:last-child) {
+  margin-left: 40px;
 }
 .address {
+  display: block;
+  margin-right: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-family: var(--primary-front);
   font-style: normal;
   font-size: 16px;
