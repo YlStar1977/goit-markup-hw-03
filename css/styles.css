@@ -265,6 +265,7 @@ body {
 /* Section 3 */
 .backgroun-color-section {
   background: var(--color-cloud);
+  padding: 120px 0;
 }
 .backgroun-color-card {
   background-color: var(--color-white);
@@ -279,12 +280,18 @@ body {
 }
 .card-style {
   max-height: 380px;
-  border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .card {
   padding-bottom: 32px;
+}
+.card-prof {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 0px 0px 4px 4px;
 }
 .title-style-section {
   font-weight: 700;
@@ -293,6 +300,7 @@ body {
   text-align: center;
   text-transform: capitalize;
   padding-top: 120px;
+  margin-bottom: 72px;
 
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
