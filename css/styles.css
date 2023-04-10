@@ -438,12 +438,12 @@ body {
 }
 .flex-gallery {
   margin: 0 auto;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .border-gallery {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 24px;
-  margin-bottom: 24px;
 
   width: calc((100% - 48px) / 3);
 
