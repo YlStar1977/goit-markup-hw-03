@@ -47,8 +47,8 @@ body {
   padding: 0px 15px;
   margin: auto;
 
-  outline: solid red;
-  outline-offset: -2px;
+  /* outline: solid red;
+  outline-offset: -2px; */
 }
 
 /* Top line header*/
