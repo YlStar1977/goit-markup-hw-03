@@ -198,6 +198,10 @@ body {
   clip: rect(0 0 0);
   overflow: hidden;
 }
+.section-conteiner {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .section-title {
   font-weight: 500;
   font-size: 20px;
@@ -206,7 +210,7 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--color-navy-blue);
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .section-text {
   font-size: 16px;
@@ -219,10 +223,11 @@ body {
 .flex-list {
   display: flex;
   align-items: flex-start;
-  flex-basis: calc((100% / 3)-24px);
-  gap: 24px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* flex-basis: calc((100% / 3)-24px);
+  gap: 24px; */
+}
+.flex-list-section {
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 /* Section 2 */
