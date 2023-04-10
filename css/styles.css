@@ -56,6 +56,8 @@ body {
 
 .header-container {
   display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e7e9fc;
 }
 .border {
   border-bottom: 1px solid #e7e9fc;
@@ -82,13 +84,16 @@ body {
 .nav-flex {
   display: flex;
   gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-flex {
   display: flex;
+  align-items: center;
   margin-right: auto;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
 }
 
 .header-nav {
