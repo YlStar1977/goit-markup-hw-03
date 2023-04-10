@@ -57,11 +57,10 @@ body {
 .header-container {
   display: flex;
   align-items: center;
+}
+.border {
   border-bottom: 1px solid #e7e9fc;
 }
-/* .border {
-  border-bottom: 1px solid #e7e9fc;
-} */
 
 .logo {
   font-family: "Raleway", sans-serif;
