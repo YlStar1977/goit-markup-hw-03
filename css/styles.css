@@ -280,7 +280,7 @@ body {
 }
 .card-style {
   max-height: 380px;
-  width: calc((100%-24 * 3) / 4);
+  width: calc((100%-24px * 3) / 4);
 }
 /* .card {
   padding-bottom: 32px;
@@ -360,7 +360,7 @@ body {
   color: var(--color-cloud);
 }
 .logo-style {
-  /* padding-bottom: 16px; */
+  padding-bottom: 16px;
 }
 /* .logo-footer {
   padding-bottom: 16px;
