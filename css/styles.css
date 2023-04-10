@@ -344,6 +344,11 @@ body {
   top: 2280px;
 
   background: var(--color-navy-blue);
+  padding: 100px 0;
+}
+.logo-footer-item {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .logo-studio-footer {
   font-family: var(--logo-font);
