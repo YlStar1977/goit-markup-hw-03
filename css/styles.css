@@ -245,7 +245,6 @@ body {
   align-items: flex-start;
   gap: 24px;
   margin-top: 72px;
-  padding-bottom: 120px;
 }
 .container-img {
   flex-basis: calc((100% / 4)-24px);
@@ -264,8 +263,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  padding-top: 72px;
-  padding-bottom: 120px;
 }
 .card-style {
   max-height: 380px;
@@ -285,7 +282,6 @@ body {
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
-  padding-top: 120px;
   margin-bottom: 72px;
 
   letter-spacing: 0.02em;
@@ -382,9 +378,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding-top: 96px;
   margin-bottom: 72px;
-  margin-right: auto;
 }
 
 /* Row 1 2 3 */
